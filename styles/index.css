@@ -34,10 +34,13 @@ body{
 
 @keyframes mi-efecto {
     0%{
-        color: white;
+        color: black;
+    }
+    10%{
+        color: blueviolet;
     }
     25%{
-        color: lightgrey;
+        color: lightslategray;
     }
     50%{
         color:grey;
