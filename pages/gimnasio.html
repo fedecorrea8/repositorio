@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio</title>
+    <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon"><!-- favicon  -->
+    <link rel="stylesheet" href="../styles/gimnasio.css">
+</head>
+<body>
+    <header>
+        <h1>GIMNASIO</h1>
+        <div class="imagen">
+        
+
+        </div>
+        
+        <nav> <!-- Menú de navegación -->
+            <ul> <!-- Menú -->
+                <li><a href="../index.html">Página principal</a></li>
+                <li><a href="./sede.html">Sede</a></li> 
+                <li><a href="#">Actividades</a>
+                    <ul> <!-- Submenú -->
+                        <li><a href="./futbol.html">Fútbol</a></li>
+                        <li><a href="./tenis.html">Tenis</a></li>
+                        <li><a href="./gimnasio.html">Gimnasio</a></li>  
+                    </ul>
+                </li>
+                <li><a href="./indumentaria.html">Indumentaria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, animi est non corporis omnis deserunt provident ea nesciunt labore dicta dolorem ipsa repudiandae totam iusto eveniet id officiis consequuntur placeat?</p>
+        
+        <table border="1" cellpadding="10" cellspacing="15"><!-- Inicia tabla -->
+            <tr> <!-- fila -->
+            <td>Lunes</td><!-- celdas -->
+            <td>8 - 20</td>
+            </tr>
+        
+            <tr>
+            <td>Martes</td>
+            <td>8 - 20</td>
+            </tr>
+
+            <tr>
+                <td>Miercoles</td>
+                <td>8 - 20</td>
+            </tr>
+            
+            <tr>
+                <td>Jueves</td>
+                <td>8 - 22</td>
+            </tr>
+            
+            <tr>
+                <td>Viernes</td>
+                <td>8 - 22</td>
+            </tr>
+            
+            <tr>
+                <td>Sábado</td>
+                <td>10 - 18</td>
+            </tr>
+            
+            <tr>
+                <td>Domingo</td>
+                <td>Cerrado</td>
+            </tr>
+        </table>
+
+    </main>
+    <section>
+        <h2>Ficha de inscripción:</h2>
+
+        <form action="enviar.php" method="get" enctype="text/plain"><!-- Inicia formulario -->
+            <div>
+                <label for="gnombre">Nombre y apellido:</label>
+                <input type="text" id="gnombre" name="gnombre" placeholder="Ingresar nombre y apellido" required>
+            </div>
+        <br>
+        
+            <div>
+                <label for="gemail">Email:</label>
+                <input type="email" id="gemail" name="gemail" required placeholder="Ingresar mail">
+            </div>
+        <br>
+        
+            <div>
+                <label for="gadjunto">Adjuntar foto carnet:</label>
+                <input type="file" id="gadjunto" name="gadjunto">
+            </div>
+        <br>
+            
+            <div>
+                <label for="gapto">Adjuntar apto médico:</label>
+                <input type="file" id="gapto" name="gapto">
+            </div>
+        <br>
+        
+            <div>
+                <label for="gsexo">Tipo de sexo:</label>
+                <input type="radio" name="gsexo" id="gsexo" value="1">masculino
+                <input type="radio" name="gsexo" id="gsexo" value="2">femenino
+            </div>
+        <br>
+            
+            <div>
+                <label for="gnews">Recibir newsletter</label>
+                <input type="checkbox" id="gnews" name="gnews">
+            </div>
+        <br>
+
+            <div>
+                <label for="gtimesub">Tipo de subscripción:</label>
+                <select name="gtimesub" id="gtimesub">
+                    <option value="01">Mensual</option>
+                    <option value="02">Trimestral</option>
+                    <option value="03">Anual</option>
+                </select>
+            </div>
+        <br>
+                
+                <input type="submit" value="Enviar ahora">
+                <input type="reset" value="Borrar datos">
+        </form>
+                    
+    </section>
+            
+    <footer class="pie__sec"><!-- Pie de página -->
+        <div class="pie__links">
+            <a href="#">Facebook |</a>
+            <a href="#">Twitter |</a>
+            <a href="#">Instagram |</a>
+            <a href="#">ETC</a>
+        </div>
+    </footer>       
+                    
+    
+    </body>
+    </html>
+            
+        

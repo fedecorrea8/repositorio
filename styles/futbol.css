@@ -1,0 +1,116 @@
+*{  /* Reset */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: grey; /* Color de fondo */
+}
+
+/* título de la pág. */
+h1 { 
+    width: 100%;
+    height: 60px;
+    color: black;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Imagen */
+div.imagen {
+    height: 250px;
+    background-image: url(../img/football.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Menú */
+header { 
+    padding: 25px 50px;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    position: relative;
+}
+
+ul li a {
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    display: inline-block;
+    min-width: 170px;
+    text-align: center;
+    position: static;
+}
+ul li a:hover { /* Hover */
+    background: black;
+    color: white;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+ul li:hover ul { /* Hover */
+    display: block;
+}
+ul li ul li a {
+    font-size: 12px;
+    text-align: left;
+}
+
+/* Main */
+
+main{
+    margin: 90px 0px;
+}
+
+/* Form */
+
+section {
+    margin: 90px 0px;
+}
+
+p{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+form {
+    text-align: center;
+}
+
+/* footer sec pages */
+
+div.pie__links a{
+    text-decoration: none;
+    color: white;
+}
+
+footer.pie__sec {
+    border: 2px solid black;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    padding: 10px 0px;
+    background-color: black;
+}
+
