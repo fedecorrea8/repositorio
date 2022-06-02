@@ -8,95 +8,125 @@
     <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/index.css">
     
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 
-<body>
-    
-    
-    
-    <div id="grid-area">
-        
-        <header>
-            <div class="animate">
-                <h1>CENTRO DEPORTIVO LOREN</h1>
-            </div>
-        </header>
-                
+<body class="background bg-warning">
+  
 
-        <nav>
-            <div>
-                <ul> <!-- Menú -->
-                    <li class="link_principal"><a href="./index.html">Página principal</a></li>
-                    <li><a href="./pages/sede.html">Sede</a></li> 
-                    <li><a href="./pages/futbol.html">Fútbol</a></li>
-                    <li><a href="./pages/tenis.html">Tenis</a></li>
-                    <li><a href="./pages/gimnasio.html">Gimnasio</a></li>  
-                    <li><a href="./pages/indumentaria.html">Indumentaria</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">                <!-- MENU -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LOREN</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sede.html">Sede</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Actividades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./pages/futbol.html">Futbol</a></li>
+                  <li><a class="dropdown-item" href="./pages/gimnasio.html">Gimnasio</a></li>
+                  <li><a class="dropdown-item" href="./pages/tenis.html">Tenis</a></li>
                 </ul>
-            </div>
-        </nav>
-                    
-                        
-                        
-                    
-        
-        <main>
-            
-            <div class="main-one">
-                <img class="main-img" src="./img/vistaaerea_index.webp" alt="centro deportes">
-            </div>
-            
-            <div class="main-two">
-                <p class="main-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque totam cum quas veniam ?</p>
-            </div>
-            
-            <div class="main-three">
-                <p>DIRECCIÓN</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420460.61886372446!2d-58.820838874227704!3d-34.582697632761636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e5a62fb2fed%3A0x9a5547a4292fc676!2zUTUgRsO6dGJvbCAtIFJlc3TDsw!5e0!3m2!1ses-419!2sar!4v1653942039243!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            
-        </main>
+                </li>
+                  
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/indumentaria.html">Indumentaria</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
 
-                
-            
-        
-        <section>
-            <div>info 2</div>
-        </section>
-
-        <aside>
-            <div>banner</div>
-        </aside>
-        
-        <footer>
-            <div>
-                <a href="https://www.facebook.com">Facebook</a>
+      
+    <div> <!-- CAROUSEL -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">  
+          <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./IMG/carousel1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>GIMNASIO</h5>
+              <p>Instalaciones de última generación</p>
             </div>
-            <div>
-                <a href="https://www.twitter.com">Twitter</a>
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/carousel2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>FÚTBOL</h5>
+              <p>Categorias masculinas y femeninas - Torneo de veteranos</p>
             </div>
-            
-            <div>
-                <a href="https://www.instagram.com">Instagram</a>
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/carousel3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>TENIS</h5>
+              <p>Escuela, torneos, entrenadores</p>
             </div>
-            <div>
-                <a href="#">ETC</a>
-            </div>
-
-        </footer>
-                
-                
-                
-        
-        
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+
+    <div class="container-fluid bg-dark text-light text-center p-2">
+        <p>COMO LLEGAR:</p>
         
-        
-        
-        
-        
-        
-    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.3159352404123!2d-58.227348584171494!3d-34.74763347263525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f7397d913ff%3A0xffc55a695a4db0b2!2sMannschaft%20F.%20C.!5e0!3m2!1ses!2sar!4v1654133387686!5m2!1ses!2sar" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="container-fluid bg-dark text-light text-center p-3"> <!-- FOOTER -->
+        <p>
+          <a href="https://www.facebook.com">Facebook</a>
+          <a href="https://www.instagram.com">Instagram</a>
+          <a href="https://www.Twitter.com">Twitter</a>
+        </p>
+
+        <p class="small">
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+      
+
+
+
+      
+      
+
+
+
+
+
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
+
 </body>
 
 

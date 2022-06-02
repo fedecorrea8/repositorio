@@ -5,10 +5,6 @@
     font-family: sans-serif;
 }
 
-body {
-    background-color: grey; /* Color de fondo */
-}
-
 /* título de la pág. */
 h1 { 
     width: 100%;
@@ -26,52 +22,6 @@ div.imagen {
     background-position: center;
 }
 
-/* Menú */
-header { 
-    padding: 25px 50px;
-}
-
-nav {
-    margin: 10px 0px;
-    justify-content: center;
-    display: flex;
-}
-
-ul li {
-    list-style: none;
-    display: inline;
-    position: relative;
-}
-
-ul li a {
-    padding: 10px 20px;
-    margin: 0 10px;
-    text-decoration: none;
-    border: 1px solid black;
-    color: black;
-    display: inline-block;
-    min-width: 170px;
-    text-align: center;
-    position: static;
-}
-ul li a:hover { /* Hover */
-    background: black;
-    color: white;
-}
-
-ul li ul {
-    display: none;
-    position: absolute;
-    top: 30px;
-    left: 0;
-}
-ul li:hover ul { /* Hover */
-    display: block;
-}
-ul li ul li a {
-    font-size: 12px;
-    text-align: left;
-}
 
 /* Main */
 
