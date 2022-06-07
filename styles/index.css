@@ -2,3 +2,43 @@ i {
     font-size: 250%;
     color: white;
 }
+/* SEDE */
+.imagen-sede {
+    
+    margin-bottom: 5%;
+}
+
+.sede-h4{
+    margin-top: 2%;
+}
+
+.titulo-sede{
+    color: white;
+}
+
+@media (min-width:768px){
+   
+    .titulo-sede{
+        color: #484848;
+        font-weight: bold;
+    }
+
+    .ani-sede{
+        transition: .5s linear;
+    }
+
+    h1:hover .ani-sede{
+        margin-right: 10px;
+    }
+
+    h1:hover .ani2-sede{
+        color: white;
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #fff;
+    }
+}
+        
+
+
+

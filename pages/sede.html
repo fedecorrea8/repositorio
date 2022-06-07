@@ -6,50 +6,122 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Sede</title>
     <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/sede.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 
-<body>
-    <header>
-        
-        <h1>INSTALACIONES</h1>
+<body class="container bg-dark">
+    <header class="bg-dark mt-3">
 
-        <nav> <!-- Menú de navegación -->
-            <ul> <!-- Menú -->
-                <li><a href="../index.html">Página principal</a></li>
-                <li><a href="./sede.html">Sede</a></li> 
-                <li><a href="#">Actividades</a>
-                    <ul> <!-- Submenú -->
-                        <li><a href="./futbol.html">Fútbol</a></li>
-                        <li><a href="./tenis.html">Tenis</a></li>
-                        <li><a href="./gimnasio.html">Gimnasio</a></li>  
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">                <!-- MENU -->
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">LOREN</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/sede.html">Sede</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Actividades
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../pages/futbol.html">Futbol</a></li>
+                      <li><a class="dropdown-item" href="../pages/gimnasio.html">Gimnasio</a></li>
+                      <li><a class="dropdown-item" href="../pages/tenis.html">Tenis</a></li>
                     </ul>
-                </li>
-                <li><a href="./indumentaria.html">Indumentaria</a></li>
-            </ul>
+                    </li>
+                      
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/indumentaria.html">Indumentaria</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
         </nav>
-            
+        
+        <div class="container text-center mt-3 mb-5">
+            <h1 class="titulo-sede">
+              
+              <span class="ani-sede">NUESTRA</span>  <span class="ani2-sede">SEDE</span> 
+
+
+            </h1>
+
+        </div>
+        
         
     </header>
+    
+    <main class="container text-center">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 text-light">
+                <h4 class="sede-h4">FUTBOL</h4>
+                <img class="imagen-sede" src="../img/cesped-sedef.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, esse sequi. Nulla est odit, pariatur ea illo omnis aliquid consequatur rem, eligendi non quasi quod repellendus fugit molestiae. Sunt, suscipit.</p>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 text-light">
+                <h4 class="sede-h4">GIMNASIO</h4>
+                <img class="imagen-sede" src="../img/gim header.jpg" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque soluta quam totam perferendis, tempora sit officiis, aliquid nam impedit eos praesentium ullam aut nemo mollitia!</p>
+            </div> 
 
-    <main>
-
-        <div>
-            <p>En este video conoceras mas de cerca nuestras instalaciones!!!</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ul6YONz8wM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
+        <div class="row">
+            <div class="col-sm-12 col-md-6 text-light">
+                <h4 class="sede-h4">TENIS</h4>
+                <img class="imagen-sede" src="../img/tenis-sede.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, esse sequi. Nulla est odit, pariatur ea illo omnis aliquid consequatur rem, eligendi non quasi quod repellendus fugit molestiae. Sunt, suscipit.</p>
+            </div>
+
+            <div class="col-sm-12 col-md-6 text-light">
+                <h4 class="sede-h4">ENFERMERÍA</h4>
+                <img class="imagen-sede" src="../img/salud-sede.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, esse sequi. Nulla est odit, pariatur ea illo omnis aliquid consequatur rem, eligendi non quasi quod repellendus fugit molestiae. Sunt, suscipit.</p>
+            </div>
+        </div>    
+        
+            
+            
+        
+        <div class="col-sm-12 col-md-12 mt-3">
+            <iframe class="img-fluid" width="560" height="315" src="https://www.youtube.com/embed/Ul6YONz8wM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </main>
 
-    <footer class="pie__sec"><!-- Pie de página -->
-        <div class="pie__links">
-            <a href="#">Facebook |</a>
-            <a href="#">Twitter |</a>
-            <a href="#">Instagram |</a>
-            <a href="#">ETC</a>
-        </div>
-    </footer> 
-    
-</body>
 
-</html>   
+
+
+    <div class="container-fluid bg-dark text-light p-3"> <!-- FOOTER -->
+      <div class="text-center">
+      <a href="https://www.facebook.com" class="me-5"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.Twitter.com" class="ms-5"><i class="bi bi-twitter"></i></a>
+      </div>
+
+      <p class="small mt-4 text-center">
+          Todos los derechos reservados.
+      </p>
+    </div>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
+
+  </body>
+  </html>   
