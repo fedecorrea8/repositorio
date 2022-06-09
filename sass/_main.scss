@@ -1,0 +1,22 @@
+@import 'variables';
+
+main{
+    div{
+        background-color: $color_fondo;
+        padding: $padding_sec;
+        margin: 30px;
+        display: grid;
+        justify-content: center;
+        p{
+            color: white;
+            font-size: large;
+        }
+        table{
+            color: white;
+            
+            
+        }
+        
+    }
+}
+

@@ -6,169 +6,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gimnasio</title>
     <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon"><!-- favicon  -->
-    <link rel="stylesheet" href="../styles/gimnasio.css">
+    <link rel="stylesheet" href="../sass/style.css">
         <!-- CSS only -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 
-<body class="background bg-warning">
-    <header>
-        
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">                <!-- MENU -->
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">LOREN</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./sede.html">Sede</a>
-                    </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Actividades
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="./futbol.html">Futbol</a></li>
-                      <li><a class="dropdown-item" href="./gimnasio.html">Gimnasio</a></li>
-                      <li><a class="dropdown-item" href="./tenis.html">Tenis</a></li>
-                    </ul>
-                    </li>
-                      
-                  <li class="nav-item">
-                      <a class="nav-link" href="./indumentaria.html">Indumentaria</a>
-                    </li>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">                <!-- MENU -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">LOREN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./sede.html">Sede</a>
+                </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Actividades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./futbol.html">Futbol</a></li>
+                  <li><a class="dropdown-item" href="./gimnasio.html">Gimnasio</a></li>
+                  <li><a class="dropdown-item" href="./tenis.html">Tenis</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-warning" type="submit">Search</button>
-                </form>
-            </div>
+                </li>
+                  
+              <li class="nav-item">
+                  <a class="nav-link" href="./indumentaria.html">Indumentaria</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
         </div>
-        </nav>
+    </div>
+    </nav>
+    
+    
+    <header class="header">
+        
 
-        <h1>GIMNASIO</h1>
-        <div class="imagen">
+        <div class="header__titulo">
+            <h1>GIMNASIO</h1>
+        </div>
+
+        <div class="header__imagen">
+            <img src="../img/gim header.jpg" alt="gimnasio pesas">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias laboriosam, dolores earum nobis reiciendis.</p>
+            <img src="../img/gim header.jpg" alt="gimnasio pesas">
+        </div>
+            
+
         
     
-        </div>
     </header>
 
     <main>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, animi est non corporis omnis deserunt provident ea nesciunt labore dicta dolorem ipsa repudiandae totam iusto eveniet id officiis consequuntur placeat?</p>
-        
-        <table border="1" cellpadding="10" cellspacing="15"><!-- Inicia tabla -->
-            <tr> <!-- fila -->
-            <td>Lunes</td><!-- celdas -->
-            <td>8 - 20</td>
-        </tr>
-        
-            <tr>
-            <td>Martes</td>
-            <td>8 - 20</td>
-            </tr>
-
-            <tr>
-                <td>Miercoles</td>
+        <div>
+            <p>Horarios del predio / incluye feriados</p>
+            <table border="1" cellpadding="10" cellspacing="15"><!-- Inicia tabla -->
+                <tr> <!-- fila -->
+                <td>Lunes</td><!-- celdas -->
                 <td>8 - 20</td>
             </tr>
             
-            <tr>
-                <td>Jueves</td>
-                <td>8 - 22</td>
-            </tr>
-            
-            <tr>
-                <td>Viernes</td>
-                <td>8 - 22</td>
-            </tr>
-            
-            <tr>
-                <td>Sábado</td>
-                <td>10 - 18</td>
-            </tr>
-            
-            <tr>
-                <td>Domingo</td>
-                <td>Cerrado</td>
-            </tr>
-        </table>
+                <tr>
+                <td>Martes</td>
+                <td>8 - 20</td>
+                </tr>
 
+                <tr>
+                    <td>Miercoles</td>
+                    <td>8 - 20</td>
+                </tr>
+                
+                <tr>
+                    <td>Jueves</td>
+                    <td>8 - 22</td>
+                </tr>
+                
+                <tr>
+                    <td>Viernes</td>
+                    <td>8 - 22</td>
+                </tr>
+                
+                <tr>
+                    <td>Sábado</td>
+                    <td>10 - 18</td>
+                </tr>
+                
+                <tr>
+                    <td>Domingo</td>
+                    <td>Cerrado</td>
+                </tr>
+            </table>
+        </div>
     </main>
     <section>
-        <h2>Ficha de inscripción:</h2>
 
-        <form action="enviar.php" method="get" enctype="text/plain"><!-- Inicia formulario -->
-            <div>
-                <label for="gnombre">Nombre y apellido:</label>
-                <input type="text" id="gnombre" name="gnombre" placeholder="Ingresar nombre y apellido" required>
-            </div>
-        <br>
-        
-            <div>
-                <label for="gemail">Email:</label>
-                <input type="email" id="gemail" name="gemail" required placeholder="Ingresar mail">
-            </div>
-        <br>
-        
-            <div>
-                <label for="gadjunto">Adjuntar foto carnet:</label>
-                <input type="file" id="gadjunto" name="gadjunto">
-            </div>
-        <br>
-            
-            <div>
-                <label for="gapto">Adjuntar apto médico:</label>
-                <input type="file" id="gapto" name="gapto">
-            </div>
-        <br>
-        
-            <div>
-                <label for="gsexo">Tipo de sexo:</label>
-                <input type="radio" name="gsexo" id="gsexo" value="1">masculino
-                <input type="radio" name="gsexo" id="gsexo" value="2">femenino
-            </div>
-        <br>
-            
-            <div>
-                <label for="gnews">Recibir newsletter</label>
-                <input type="checkbox" id="gnews" name="gnews">
-            </div>
-        <br>
+        <div>
+            <h2>Ficha de inscripción:</h2>
 
-            <div>
-                <label for="gtimesub">Tipo de subscripción:</label>
-                <select name="gtimesub" id="gtimesub">
-                    <option value="01">Mensual</option>
-                    <option value="02">Trimestral</option>
-                    <option value="03">Anual</option>
-                </select>
-            </div>
-        <br>
+            <form action="enviar.php" method="get" enctype="text/plain"><!-- Inicia formulario -->
+                <div>
+                    <label for="gnombre">Nombre y apellido:</label>
+                    <input type="text" id="gnombre" name="gnombre" placeholder="Ingresar nombre y apellido" required>
+                </div>
+            <br>
+            
+                <div>
+                    <label for="gemail">Email:</label>
+                    <input type="email" id="gemail" name="gemail" required placeholder="Ingresar mail">
+                </div>
+            <br>
+            
+                <div>
+                    <label for="gadjunto">Adjuntar foto carnet:</label>
+                    <input type="file" id="gadjunto" name="gadjunto">
+                </div>
+            <br>
                 
-                <input type="submit" value="Enviar ahora">
-                <input type="reset" value="Borrar datos">
-        </form>
-                    
-    </section>
+                <div>
+                    <label for="gapto">Adjuntar apto médico:</label>
+                    <input type="file" id="gapto" name="gapto">
+                </div>
+            <br>
             
-    <footer class="pie__sec"><!-- Pie de página -->
-        <div class="pie__links">
-            <a href="#">Facebook |</a>
-            <a href="#">Twitter |</a>
-            <a href="#">Instagram |</a>
-            <a href="#">ETC</a>
+                <div>
+                    <label for="gsexo">Tipo de sexo:</label>
+                    <input type="radio" name="gsexo" id="gsexo" value="1">masculino
+                    <input type="radio" name="gsexo" id="gsexo" value="2">femenino
+                </div>
+            <br>
+                
+                <div>
+                    <label for="gnews">Recibir newsletter</label>
+                    <input type="checkbox" id="gnews" name="gnews">
+                </div>
+            <br>
+
+                <div>
+                    <label for="gtimesub">Tipo de subscripción:</label>
+                    <select name="gtimesub" id="gtimesub">
+                        <option value="01">Mensual</option>
+                        <option value="02">Trimestral</option>
+                        <option value="03">Anual</option>
+                    </select>
+                </div>
+            <br>
+                    
+                    <input type="submit" value="Enviar ahora">
+                    <input type="reset" value="Borrar datos">
+            </form>
+        </div>            
+    </section>
+     
+    <div class="container-fluid bg-dark text-light p-3"> <!-- FOOTER -->
+        <div class="text-center">
+        <a href="https://www.facebook.com" class="me-5"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.Twitter.com" class="ms-5"><i class="bi bi-twitter"></i></a>
         </div>
-    </footer>       
+
+        <p class="small mt-4 text-center">
+            Todos los derechos reservados.
+        </p>
+    </div>
+
+        
                     
      <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
     </body>
-    </html>
+</html>
             
         
