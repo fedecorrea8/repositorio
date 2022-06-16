@@ -2,6 +2,7 @@
   background-color: #020220;
   padding: 10px;
   margin: 30px;
+  /* MAP GET */
   text-align: center;
 }
 
@@ -16,10 +17,11 @@
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
 
-.header__imagen {
+.header__imagen, .header__imagen--large {
   background-color: #020220;
   padding: 10px;
   margin: 30px;
+  /* MAP GET */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,12 +31,16 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border: 2px solid #0c0505;
-  font-size: large;
 }
 
-.header__imagen p {
+.header__imagen p, .header__imagen--large p {
   color: white;
   font-weight: 700;
+}
+
+/* EXTEND */
+.header__imagen--large {
+  font-size: large;
 }
 
 main div {
@@ -57,17 +63,6 @@ main div table {
   color: white;
 }
 
-section {
-  background-color: #020220;
-  padding: 10px;
-  margin: 30px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 section div h2 {
   color: white;
   margin: 10px;
@@ -76,5 +71,26 @@ section div h2 {
 section div form {
   border: solid white 2px;
   color: white;
+}
+
+.estilo__prin {
+  /* MIXING */
+  background-color: #020220;
+  padding: 10px;
+  margin: 30px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.estilo__prin--center {
+  /* MIXING */
+  background-color: #020220;
+  padding: 10px;
+  margin: 30px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

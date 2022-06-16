@@ -4,7 +4,7 @@
     &__titulo{
         background-color:$color_fondo;
         padding: $padding_sec;
-        margin: 30px;
+        margin: map-get($map: $margin, $key: base);  /* MAP GET */
         text-align: center;
     }
     
@@ -24,12 +24,11 @@
     &__imagen{
         background-color: $color_fondo;
         padding: $padding_sec;
-        margin: 30px;
+        margin: map-get($map: $margin, $key: base); /* MAP GET */
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         border: $borde_n;
-        font-size: large;
             p{
                 color: white;
                 font-weight: 700;
@@ -40,8 +39,12 @@
             
         
             
-            
- 
+/* EXTEND */            
+.header__imagen--large{
+    @extend .header__imagen;
+    font-size: large;
+}
+
     
         
         

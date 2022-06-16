@@ -4,7 +4,7 @@ main{
     div{
         background-color: $color_fondo;
         padding: $padding_sec;
-        margin: 30px;
+        margin: map-get($map: $margin, $key: base);
         display: grid;
         justify-content: center;
         p{

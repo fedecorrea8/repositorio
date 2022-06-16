@@ -1,11 +1,7 @@
 @import 'variables';
 
 section{
-    background-color: $color_fondo;
-    padding: $padding_sec;
-    margin: 30px;
-    display: grid;
-    justify-content: center;
+  
     div{
         h2{
             color: white;
@@ -17,3 +13,23 @@ section{
         }
     }
 }
+
+@mixin estilo__prin { /* MIXING */
+    
+    background-color: $color_fondo;
+    padding: $padding_sec;
+    margin: map-get($map: $margin, $key: base);
+    display: grid;
+}
+
+
+.estilo__prin{
+    @include estilo__prin;
+}
+
+.estilo__prin--center{
+    @include estilo__prin;
+    justify-content: center;
+}
+
+    
