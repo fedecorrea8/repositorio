@@ -1,10 +1,121 @@
-@import 'variables';
-@import 'header';
-@import 'main';
-@import 'section';
+*{  /* Reset */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 
 
+body{
+    
+    background-image: url(../img/background-image.jpg); /* Imagen fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+
+    .index__caratula{
+        padding: 0 30px;
+        margin-top: 150px;
+        text-align: center;
+        color: #fff;
+        h1{
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        span{
+            color: rgb(248, 6, 3);
+        }
+        span:hover{ /* Animación (Loren) */
+            text-shadow: 0 0 10px rgb(248, 6, 3),
+            0 0 40px rgb(248, 6, 3),
+            0 0 80px rgb(248, 6, 3);
+            transition: 1s;
+        }
+        h2{
+            font-size: 20px;
+            font-weight: 650;
+        }
+    }
+
+    .index__botones{ /* Botones bajo título */
+        text-align: center;
+        .index__boton{
+            margin-right: 20px;
+            padding: 10px 30px;
+            background-color: rgb(248, 6, 3);
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            
+        }
+        .index__boton:hover{
+            background-color: #fff;
+            color: rgb(248, 6, 3);
+            transition: 0.5s;
+        }
+        .index__boton2{
+            margin-right: 0px;
+            padding: 10px 30px;
+            background-color: #fff;
+            color: rgb(248, 6, 3);
+            border-radius: 6px;
+            text-decoration: none;
+            
+        }
+        .index__boton2:hover{
+            background-color: rgb(248, 6, 3);
+            color: #fff;
+            transition: 0.5s;
+        }
+    }
+
+    
+    
+    
+
+    /* INDEX RESPONSIVE (desktop)*/
+
+    @media screen and (min-width: 768px){
+       .index__caratula{
+            h2{
+                font-size: 35px;
+                margin-top: 50px;
+
+            }
+            h1{
+                font-size: 70px;
+                margin-bottom: 30px;
+                margin-top: 50px;
+            }
+       }
+
+       .index__botones{
+            margin-top: 100px;
+       }
+
+       .footer{ /* footer posicionamiento */
+            
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            font-size: 150%;
+        }
+    }
 
 
+       
 
+      
 
+         
+        
+}   
+    
+
+        
+        
+        
+
+    
+    

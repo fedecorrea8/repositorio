@@ -3,86 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Indumentaria:</title>
-    <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/indumentaria.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loren Deportes</title>  <!-- Titulo en pestaña -->
+    <link rel="stylesheet" href="../sass/style.css"> <!-- Linkeado a css/sass -->
+    <!-- CSS only (BOOTSTRAP) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <!-- SEO -->
-    <meta name="description" content="Centro Deportivo Loren. Fortalece tu organismo o práctica tus deportes favoritos en nuestras instalaciones. Gimnasio, fútbol y tenis. Centro de alto rendimiento">
-    <meta name="keywords" content="gim, gimnasio, futbol, tenis, deportes, salud, centro, deportivo,">
-
+    <meta name="description" content="Store de nuestro centro deportivo. Artículos deportivos y suplementos alimenticios.">
+    <meta name="keywords" content="store, tienda, futbol, tenis, deportes, salud, centro, deportivo, dieta, suplementos">
 </head>
 
 <body>
-    <header>
-        
-        <h1>Indumentaria de nuestro centro deportivo</h1>
 
-        <nav> <!-- Menú de navegación -->
-            <ul> <!-- Menú -->
-                <li><a href="../index.html">Página principal</a></li>
-                <li><a href="./sede.html">Sede</a></li> 
-                <li><a href="#">Actividades</a>
-                    <ul> <!-- Submenú -->
-                        <li><a href="./futbol.html">Fútbol</a></li>
-                        <li><a href="./tenis.html">Tenis</a></li>
-                        <li><a href="./gimnasio.html">Gimnasio</a></li>  
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">                <!-- MENU -->
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">LOREN</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/sede.html">Sede</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Actividades
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../pages/futbol.html">Futbol</a></li>
+                      <li><a class="dropdown-item" href="../pages/gimnasio.html">Gimnasio</a></li>
+                      <li><a class="dropdown-item" href="../pages/tenis.html">Tenis</a></li>
                     </ul>
-                </li>
-                <li><a href="./indumentaria.html">Indumentaria</a></li>
-            </ul>
+                    </li>
+                      
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/indumentaria.html">Indumentaria</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
         </nav>
-        
     </header>
 
-    <main>
+
+    <div class="footer">
+
         
-        <h2>Nueva camiseta 2022</h2>
-        <section>
-
-            <div class="flex-container">
-
-                <div class="flex-text">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi laudantium consectetur aspernatur reprehenderit exercitationem maiores, dolorem voluptates atque enim, quos at animi sit nemo doloremque quae sapiente rem dolore nostrum perferendis quaerat omnis assumenda pariatur eveniet. Eos natus adipisci ea voluptate, quaerat esse expedita accusantium fuga laborum optio iusto, ipsum doloremque culpa nobis dolore. Magni sapiente magnam aperiam quis vel repellat excepturi. Animi laudantium fugiat minus doloremque tempore eligendi! Minus  </p>
-                </div>
-
-                
-                <div class="flex-compra">
-
-                    <div class="flex-image">
-                        <img src="../img/camiseta.webp" alt="camiseta, remera deportiva" width="400">
-                    </div>
-
-                    <div class="flex-buy">
-
-                        <form action="enviar.php" method="get" enctype="text/plain">
-                            <label for="talle">Talle:</label>
-                            <select name="talle" id="talle">
-                                <option value="01">Small</option>
-                                <option value="02">Medium</option>
-                                <option value="03">Large</option>
-                            </select>
-                            
-                            <input type="submit" value="Comprar">
-                            
-                        </form>
-                    </div>    
-                    
-                </div>
-                
+        <div class="text-light p-3"> 
+            <div class="text-center">
+                <a href="https://www.facebook.com" class="text-light me-5"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com" class="text-light"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.Twitter.com" class="text-light ms-5"><i class="bi bi-twitter"></i></a>
             </div>
-        </section>
-    </main>
-
-    <footer class="pie__sec"><!-- Pie de página -->
-        <div class="pie__links">
-            <a href="#">Facebook |</a>
-            <a href="#">Twitter |</a>
-            <a href="#">Instagram |</a>
-            <a href="#">ETC</a>
+            
+            <p class="small mt-4 text-center">
+                Todos los derechos reservados.
+            </p>
         </div>
-    </footer>      
+    </div>
     
-</body>
+    
 
-</html>   
+    
+     <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
+
+</body>
+</html>
