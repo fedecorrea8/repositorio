@@ -103,6 +103,63 @@ body{
         }
     }
 
+    /* Page SEDE */
+
+    .sede__footer{
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        font-size: 150%;
+    }
+    .sede__encabezado{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        h1{
+            padding-top: 10px;
+            font-weight: 700;
+            text-shadow: 0 0 60px rgb(248, 6, 3);
+            color: rgb(248, 6, 3);
+        }
+    }
+    .sede__img{
+            display: flex;
+            justify-content: center;
+            
+            img{
+                width: 100%;
+            }
+    }
+
+    .sede__descripcion{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        padding: 5px;
+        color: whitesmoke;
+        border: solid 2px whitesmoke;
+       h2{
+        text-align: center;
+       }
+       p{
+        text-align: center;
+       }
+    }
+
+    .sede__mapa{
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+        iframe{
+            width: 100%;
+        }
+    }
+
+
+
+        
+       
+
 
        
 
