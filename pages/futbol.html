@@ -16,6 +16,8 @@
 
 <body>
 
+    
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">                <!-- MENU -->
             <div class="container-fluid">
@@ -55,11 +57,99 @@
         </nav>
     </header>
 
+    <h1 class="futbol__h1">FUTBOL</h1>
 
-    <div class="footer">
+    <div class="futbol__form"> <!-- Formulario con img -->
+      <form action="enviar.php" method="get" enctype="text/plain">
+         <div>
+            <label for="nombre">Nombre y apellido:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresar nombre y apellido" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Ingresar mail">
+        </div>
+        <div>
+            <label for="adjunto">Adjuntar foto carnet:</label>
+            <input type="file" id="adjunto" name="adjunto">
+        </div>
+        <div>
+            <label for="sexo">Tipo de sexo:</label>
+            <input type="radio" name="sexo" id="sexo" value="1">masculino
+            <input type="radio" name="sexo" id="sexo" value="2">femenino
+        </div>
+        <div>
+            <label for="news">Recibir newsletter</label>
+            <input type="checkbox" id="news" name="news">
+        </div>
+        <div>
+            <label for="timesub">Tipo de subscripción:</label>
+            <select name="timesub" id="timesub">
+                 <option value="01">Mensual</option>
+                 <option value="02">Trimestral</option>
+                 <option value="03">Anual</option>
+            </select>
+        </div>
+        <div>
 
-        
-        <div class="text-light p-3"> 
+          <input type="submit" value="Enviar ahora">
+          <input type="reset" value="Borrar datos">
+          
+        </div>   
+      </form>
+      <div class="futbol__form-img">
+        <img src="../img/futbol__aside.jpg" alt="piernas futbolista">
+
+      </div>
+    </div>
+
+    <div class="futbol__acordeon">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Requisitos para inscribirse a la escuela de fútbol
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              - Tener entre 5 y 16 años.
+              - Documento nacional de identidad.
+              - Apta médico.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              ¿Cuentan con categorias femeninas?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>Si, hay categorías femeninas.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="footer">  <!-- FOOTER -->
+      <div class="text-light p-3"> 
             <div class="text-center">
                 <a href="https://www.facebook.com" class="text-light me-5"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com" class="text-light"><i class="bi bi-instagram"></i></a>

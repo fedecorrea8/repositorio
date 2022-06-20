@@ -17,6 +17,7 @@ body {
   background-position: center center;
   /* INDEX RESPONSIVE (desktop)*/
   /* Page SEDE */
+  /* Page FUTBOL */
 }
 
 body .index__caratula {
@@ -177,5 +178,58 @@ body .sede__mapa {
 
 body .sede__mapa iframe {
   width: 100%;
+}
+
+body .futbol__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body .futbol__form form {
+  padding: 10px;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  margin: 10px;
+}
+
+body .futbol__form .futbol__form-img {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid whitesmoke;
+}
+
+body .futbol__form .futbol__form-img img {
+  width: 100%;
+}
+
+body .futbol__acordeon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .futbol__acordeon .accordion {
+  width: 75%;
+}
+
+body .futbol__h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

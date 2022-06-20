@@ -155,6 +155,61 @@ body{
         }
     }
 
+    /* Page FUTBOL */
+
+    .futbol__form{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px;
+        justify-content: center;
+        align-content: center;
+        form{
+            padding: 10px;
+            color: whitesmoke;
+            border: 2px solid whitesmoke;
+            margin: 10px;
+            
+        }
+        .futbol__form-img{
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid whitesmoke;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .futbol__acordeon{
+        display: flex;
+        justify-content: center;
+        .accordion{
+            width: 75%;
+        }
+    }
+
+    .futbol__h1{
+        font-size: 60px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        text-align: center;
+        font-weight: 700;
+        color: #fff;
+    }
+
+        
+            
+            
+        
+
+        
+            
+}
+        
+        
+
+
+
 
 
         
@@ -166,8 +221,7 @@ body{
       
 
          
-        
-}   
+
     
 
         
