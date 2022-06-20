@@ -18,6 +18,8 @@ body {
   /* INDEX RESPONSIVE (desktop)*/
   /* Page SEDE */
   /* Page FUTBOL */
+  /* Page GIM */
+  /* RESPONSIVE GIM */
 }
 
 body .index__caratula {
@@ -230,6 +232,131 @@ body .futbol__h1 {
   margin-top: 30px;
   text-align: center;
   font-weight: 700;
-  color: #fff;
+  color: #f80603;
+}
+
+body .futbol__h1:hover {
+  text-shadow: 0 0 10px #f80603, 0 0 40px #f80603, 0 0 80px #f80603;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gim__main {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+      grid-template-areas: "titulo titulo titulo" "horarios horarios horarios" "ficha ficha ficha" "card card card";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body .gim__main .gim__h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: titulo;
+  color: #f80603;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+body .gim__main .gim__h1 h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+body .gim__main .gim__h1:hover {
+  text-shadow: 0 0 10px #f80603, 0 0 40px #f80603, 0 0 80px #f80603;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gim__main .gim__tabla {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: horarios;
+  width: 75%;
+  text-align: center;
+  color: whitesmoke;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body .gim__main .gim__tabla tr {
+  background-color: red;
+}
+
+body .gim__main .gim__ficha {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: ficha;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 75%;
+}
+
+body .gim__main .gim__ficha h2 {
+  color: whitesmoke;
+}
+
+body .gim__main .gim__ficha form {
+  color: whitesmoke;
+}
+
+body .gim__main .gim__cards {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: card;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  body .gim__main {
+    display: -ms-grid;
+    display: grid;
+    gap: 10px;
+        grid-template-areas: "titulo titulo titulo" "horarios ficha ficha" "horarios ficha ficha" "card card card";
+  }
+  body .gim__main .gim__h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: titulo;
+    color: #f80603;
+  }
+  body .gim__main .gim__tabla {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: horarios;
+  }
+  body .gim__main .gim__ficha {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: ficha;
+  }
+  body .gim__main .gim__cards {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: card;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

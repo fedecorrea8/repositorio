@@ -194,8 +194,112 @@ body{
         margin-top: 30px;
         text-align: center;
         font-weight: 700;
-        color: #fff;
+        color: rgb(248, 6, 3);
     }
+
+    .futbol__h1:hover{
+        text-shadow: 0 0 10px rgb(248, 6, 3),
+            0 0 40px rgb(248, 6, 3),
+            0 0 80px rgb(248, 6, 3);
+            transition: 1s;
+    }
+
+    /* Page GIM */
+
+    .gim__main{
+        
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "horarios horarios horarios"
+        "ficha ficha ficha"
+        "card card card";
+        justify-content: center;
+        align-content: center;
+        .gim__h1{
+            
+            grid-area: titulo;
+            color: rgb(248, 6, 3);
+            text-align: center;
+            margin-top: 10px;
+            padding: 5px;
+            h1{
+                font-size: 60px;
+                font-weight: 700;
+            }
+        }
+        .gim__h1:hover{
+            text-shadow: 0 0 10px rgb(248, 6, 3),
+            0 0 40px rgb(248, 6, 3),
+            0 0 80px rgb(248, 6, 3);
+            transition: 1s;
+        }
+        .gim__tabla{
+            grid-area: horarios;
+            width: 75%;
+            text-align: center;
+            color: whitesmoke;
+            justify-self: center;
+            tr{
+                background-color: red;
+            }
+        }
+            
+        .gim__ficha{
+            grid-area: ficha;
+            justify-content: center;
+            justify-self: center;
+            width: 75%;
+            h2{
+                color: whitesmoke;
+            }
+            form{
+                color: whitesmoke;
+            }
+        }
+        .gim__cards{
+            grid-area: card;
+            justify-self: center;
+        }
+            
+
+    }
+
+    /* RESPONSIVE GIM */
+
+    @media screen and (min-width: 768px){
+        .gim__main{
+
+            
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 
+            "titulo titulo titulo"
+            "horarios ficha ficha"
+            "horarios ficha ficha"
+            "card card card";
+            .gim__h1{
+                grid-area: titulo;
+                color: rgb(248, 6, 3);
+            }
+            .gim__tabla{
+                grid-area: horarios;
+            }
+            .gim__ficha{
+                grid-area: ficha;
+            }
+            .gim__cards{
+                grid-area: card;
+                display: flex;
+                gap: 3px;
+            }
+
+        }
+    }
+
+
+
 
         
             

@@ -55,6 +55,137 @@
         </nav>
     </header>
 
+    <main class="gim__main">
+
+      <div class="gim__h1">
+        <h1>
+          GIMNASIO
+        </h1>
+      </div>
+
+      <table border="1" cellpadding="10" cellspacing="15" class="gim__tabla"><!-- Inicia tabla -->
+          
+          <tr> <!-- fila -->
+          <td>Lunes</td><!-- celdas -->
+          <td>8 - 20</td>
+          </tr>
+      
+          <tr>
+          <td>Martes</td>
+          <td>8 - 20</td>
+          </tr>
+
+          <tr>
+              <td>Miercoles</td>
+              <td>8 - 20</td>
+          </tr>
+          
+          <tr>
+              <td>Jueves</td>
+              <td>8 - 22</td>
+          </tr>
+          
+          <tr>
+              <td>Viernes</td>
+              <td>8 - 22</td>
+          </tr>
+          
+          <tr>
+              <td>Sábado</td>
+              <td>10 - 18</td>
+          </tr>
+          
+          <tr>
+              <td>Domingo</td>
+              <td>Cerrado</td>
+          </tr>
+      </table>
+      
+      <section class="gim__ficha">
+        <h2>Ficha de inscripción:</h2>
+
+        <form action="enviar.php" method="get" enctype="text/plain"><!-- Inicia  formulario -->
+            <div>
+                <label for="gnombre">Nombre y apellido:</label>
+                <input type="text" id="gnombre" name="gnombre" placeholder="Ingresar nombre y apellido" required>
+            </div>
+            <br>
+            
+            <div>
+                <label for="gemail">Email:</label>
+                <input type="email" id="gemail" name="gemail" required placeholder="Ingresar mail">
+            </div>
+            <br>
+          
+            <div>
+                <label for="gadjunto">Adjuntar foto carnet:</label>
+                <input type="file" id="gadjunto" name="gadjunto">
+            </div>
+            <br>
+              
+            <div>
+                <label for="gapto">Adjuntar apto médico:</label>
+                <input type="file" id="gapto" name="gapto">
+            </div>
+            <br>
+          
+            <div>
+              <label for="gsexo">Tipo de sexo:</label>
+              <input type="radio" name="gsexo" id="gsexo" value="1">masculino
+              <input type="radio" name="gsexo" id="gsexo" value="2">femenino
+            </div>
+            <br>
+            
+            <div>
+                <label for="gnews">Recibir newsletter</label>
+                <input type="checkbox" id="gnews" name="gnews">
+            </div>
+            <br>
+
+            <div>
+              <label for="gtimesub">Tipo de subscripción:</label>
+                  <select name="gtimesub" id="gtimesub">
+                      <option value="01">Mensual</option>
+                      <option value="02">Trimestral</option>
+                      <option value="03">Anual</option>
+                  </select>
+            </div>
+            <br>
+                  
+            <input type="submit" value="Enviar ahora">
+            <input type="reset" value="Borrar datos">
+        </form>
+      </section>
+
+      <div class="gim__cards">
+        <div>
+          <div class="card" style="width: 18rem;">
+            <img src="../img/gim__card1.jpg" class="card-img-top" alt="hombre sostiene mancuernas nuevas">
+            <div class="card-body">
+              <p class="card-text">Entrena con equipo nueva y de ultima generación.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="width: 18rem;">
+            <img src="../img/gim__card2.jpg" class="card-img-top" alt="envase proteina">
+            <div class="card-body">
+              <p class="card-text">Encontrá los mejores suplementos para maximizar tus ganancias.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="width: 18rem;">
+            <img src="../img/gim__card3.jpg" class="card-img-top" alt="personas practicando rcp">
+            <div class="card-body">
+              <p class="card-text">Empleados capacitados en primeros auxilios y RCP.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+          
+    </main>
 
     <div class="footer">
 
