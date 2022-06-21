@@ -20,6 +20,8 @@ body {
   /* Page FUTBOL */
   /* Page GIM */
   /* RESPONSIVE GIM */
+  /* page TENIS */
+  /* page STORE */
 }
 
 body .index__caratula {
@@ -358,5 +360,98 @@ body .gim__main .gim__cards {
     display: flex;
     gap: 3px;
   }
+}
+
+body .tenis__h1 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+  color: #f80603;
+}
+
+body .tenis__h1 h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+body .tenis__h1:hover {
+  text-shadow: 0 0 10px #f80603, 0 0 40px #f80603, 0 0 80px #f80603;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .tenis__carrusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .tenis__carrusel .carousel {
+  width: 50%;
+}
+
+body .tenis__form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .tenis__form form {
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+}
+
+body .store__h1 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+  color: #f80603;
+}
+
+body .store__h1 h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+body .store__h1:hover {
+  text-shadow: 0 0 10px #f80603, 0 0 40px #f80603, 0 0 80px #f80603;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .store__vid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .store__cards {
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

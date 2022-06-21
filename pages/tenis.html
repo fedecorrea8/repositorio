@@ -43,7 +43,7 @@
                     </li>
                       
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/indumentaria.html">Indumentaria</a>
+                    <a class="nav-link" href="../pages/indumentaria.html">STORE</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -54,6 +54,72 @@
             </div>
         </nav>
     </header>
+
+    <div class="tenis__h1">
+      <h1>TENIS</h1>
+    </div>
+
+    <div class="tenis__carrusel">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/tenis_carr1.jpg" class="d-block w-100" alt="Jugando tenis">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/tenis_carr2.jpg" class="d-block w-100" alt="Raqueta tenis">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/tenis_carr3.jpg" class="d-block w-100" alt="Jugador tenis">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="tenis__form">
+      <form action="enviar.php" method="get" enctype="text/plain">
+        <div>
+            <label for="tnombre">Nombre y apellido:</label>
+            <input type="text" id="tnombre" name="tnombre" placeholder="Ingresar nombre y apellido" required>
+        </div>
+        <div>
+            <label for="temail">Email:</label>
+            <input type="email" id="temail" name="temail" required placeholder="Ingresar mail">
+        </div>
+        <div>
+            <label for="tadjunto">Adjuntar foto carnet:</label>
+            <input type="file" id="tadjunto" name="tadjunto">
+        </div>
+        <div>
+            <label for="tsexo">Tipo de sexo:</label>
+            <input type="radio" name="tsexo" id="tsexo" value="1">masculino
+            <input type="radio" name="tsexo" id="tsexo" value="2">femenino
+        </div>
+        <div>
+            <label for="tnews">Recibir newsletter</label>
+            <input type="checkbox" id="tnews" name="tnews">
+        </div>
+        <div>
+            <label for="ttimesub">Tipo de subscripción:</label>
+            <select name="ttimesub" id="ttimesub">
+                 <option value="01">Mensual</option>
+                 <option value="02">Trimestral</option>
+                 <option value="03">Anual</option>
+            </select>
+        </div>
+        <input type="submit" value="Enviar ahora">
+        <input type="reset" value="Borrar datos">
+      </form>
+    </div>
+
+
 
 
     <div class="footer">
