@@ -17,42 +17,38 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">                <!-- MENU -->
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">LOREN</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/sede.html">Sede</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Actividades
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="../pages/futbol.html">Futbol</a></li>
-                      <li><a class="dropdown-item" href="../pages/gimnasio.html">Gimnasio</a></li>
-                      <li><a class="dropdown-item" href="../pages/tenis.html">Tenis</a></li>
-                    </ul>
-                    </li>
-                      
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/indumentaria.html">STORE</a>
-                  </li>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">                <!-- MENU -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">LOREN</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/sede.html">Sede</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Actividades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../pages/futbol.html">Futbol</a></li>
+                  <li><a class="dropdown-item" href="../pages/gimnasio.html">Gimnasio</a></li>
+                  <li><a class="dropdown-item" href="../pages/tenis.html">Tenis</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-warning" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-        </nav>
+                </li>
+                  
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/indumentaria.html">STORE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="gim__main">
@@ -102,58 +98,31 @@
       </table>
       
       <section class="gim__ficha">
-        <h2>Ficha de inscripción:</h2>
+        <h2>FORMULARIO DE INSCRIPCIÓN</h2>
 
         <form action="enviar.php" method="get" enctype="text/plain"><!-- Inicia  formulario -->
-            <div>
-                <label for="gnombre">Nombre y apellido:</label>
-                <input type="text" id="gnombre" name="gnombre" placeholder="Ingresar nombre y apellido" required>
-            </div>
-            <br>
-            
-            <div>
-                <label for="gemail">Email:</label>
-                <input type="email" id="gemail" name="gemail" required placeholder="Ingresar mail">
-            </div>
-            <br>
-          
-            <div>
-                <label for="gadjunto">Adjuntar foto carnet:</label>
-                <input type="file" id="gadjunto" name="gadjunto">
-            </div>
-            <br>
-              
-            <div>
-                <label for="gapto">Adjuntar apto médico:</label>
-                <input type="file" id="gapto" name="gapto">
-            </div>
-            <br>
-          
-            <div>
-              <label for="gsexo">Tipo de sexo:</label>
-              <input type="radio" name="gsexo" id="gsexo" value="1">masculino
-              <input type="radio" name="gsexo" id="gsexo" value="2">femenino
-            </div>
-            <br>
-            
-            <div>
-                <label for="gnews">Recibir newsletter</label>
-                <input type="checkbox" id="gnews" name="gnews">
-            </div>
-            <br>
-
-            <div>
-              <label for="gtimesub">Tipo de subscripción:</label>
-                  <select name="gtimesub" id="gtimesub">
-                      <option value="01">Mensual</option>
-                      <option value="02">Trimestral</option>
-                      <option value="03">Anual</option>
-                  </select>
-            </div>
-            <br>
-                  
-            <input type="submit" value="Enviar ahora">
-            <input type="reset" value="Borrar datos">
+          <div class="form__fila">
+             <input type="text" id="gnombre" name="gnombre" placeholder="Ingresar nombre" required>
+          </div>
+          <div class="form__fila">
+             <input type="text" id="gapellido" name="gapellido" placeholder="Ingresar apellido" required>
+          </div>
+          <div class="form__fila">
+              <input type="email" id="gemail" name="gemail" required placeholder="Ingresar mail">
+          </div>
+          <div class="form__fila">
+              <label for="gnews">Recibir newsletter</label>
+              <input type="checkbox" id="gnews" name="gnews">
+          </div>
+          <div class="form__fila">
+            <label for="gtimesub">Tipo de subscripción:</label>
+            <select name="gtimesub" id="gtimesub">
+                <option value="01">Mensual</option>
+                  <option value="02">Trimestral</option>
+                  <option value="03">Anual</option>
+              </select>
+          </div>
+          <input class="form__enviar" type="submit" value="ENVIAR">
         </form>
       </section>
 

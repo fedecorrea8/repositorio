@@ -199,20 +199,54 @@ body .futbol__form {
 }
 
 body .futbol__form form {
-  padding: 10px;
+  width: 80%;
+  padding: 30px;
   color: whitesmoke;
+  border-radius: 4px;
   border: 2px solid whitesmoke;
-  margin: 10px;
+  background: #24303c;
+  margin: auto;
+  margin-top: 50px;
+}
+
+body .futbol__form form h4 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'calibri';
+}
+
+body .futbol__form form .form_input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  margin-bottom: 14px;
+  background: #24303c;
+  border: 1px solid #1f53c5;
+  text-align: center;
+}
+
+body .futbol__form form .form_input-btn {
+  width: 100%;
 }
 
 body .futbol__form .futbol__form-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #24303c;
+  width: 80%;
   padding: 10px;
   margin: 10px;
+  border-radius: 4px;
   border: 2px solid whitesmoke;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .futbol__form .futbol__form-img img {
-  width: 100%;
+  width: 50%;
 }
 
 body .futbol__acordeon {
@@ -231,7 +265,7 @@ body .futbol__acordeon .accordion {
 body .futbol__h1 {
   font-size: 60px;
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 50px;
   text-align: center;
   font-weight: 700;
   color: #f80603;
@@ -287,10 +321,18 @@ body .gim__main .gim__tabla {
   color: whitesmoke;
   -ms-grid-column-align: center;
       justify-self: center;
+  border: 2px solid white;
 }
 
 body .gim__main .gim__tabla tr {
-  background-color: red;
+  background-color: #24303c;
+  border: 1px solid #1f53c5;
+  padding: 10px;
+  margin: 10px;
+}
+
+body .gim__main .gim__tabla td {
+  font-family: 'calibri';
 }
 
 body .gim__main .gim__ficha {
@@ -304,14 +346,49 @@ body .gim__main .gim__ficha {
   -ms-grid-column-align: center;
       justify-self: center;
   width: 75%;
+  background-color: #24303c;
+  border: 2px solid white;
 }
 
 body .gim__main .gim__ficha h2 {
   color: whitesmoke;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'calibri';
 }
 
 body .gim__main .gim__ficha form {
   color: whitesmoke;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+body .gim__main .gim__ficha form .form__fila {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #24303c;
+  text-align: center;
+  font-family: 'calibri';
+  color: grey;
+}
+
+body .gim__main .gim__ficha form .form__fila label {
+  font-family: 'calibri';
+}
+
+body .gim__main .gim__ficha form .form__fila input {
+  border: 1px solid #1f53c5;
+  border-radius: 4px;
+  background-color: #24303c;
+  width: 100%;
+  text-align: center;
+  font-family: 'calibri';
+}
+
+body .gim__main .gim__ficha form .form__enviar {
+  color: black;
+  font-family: 'calibri';
+  width: 100%;
 }
 
 body .gim__main .gim__cards {
@@ -321,6 +398,10 @@ body .gim__main .gim__cards {
   grid-area: card;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+body .gim__main .gim__cards .card {
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -405,8 +486,44 @@ body .tenis__form {
 }
 
 body .tenis__form form {
-  color: whitesmoke;
+  width: 50%;
   border: 2px solid whitesmoke;
+  background-color: #24303c;
+}
+
+body .tenis__form form h2 {
+  color: whitesmoke;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'calibri';
+}
+
+body .tenis__form form .form__fila {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #24303c;
+  text-align: center;
+  font-family: 'calibri';
+  color: grey;
+}
+
+body .tenis__form form .form__fila label {
+  font-family: 'calibri';
+}
+
+body .tenis__form form .form__fila input {
+  border: 1px solid #1f53c5;
+  border-radius: 4px;
+  background-color: #24303c;
+  width: 100%;
+  text-align: center;
+  font-family: 'calibri';
+}
+
+body .tenis__form form .form__enviar {
+  color: black;
+  font-family: 'calibri';
+  width: 100%;
 }
 
 body .store__h1 {

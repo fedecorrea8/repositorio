@@ -24,7 +24,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                   </li>
@@ -46,10 +46,6 @@
                     <a class="nav-link" href="../pages/indumentaria.html">STORE</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-warning" type="submit">Search</button>
-                </form>
               </div>
             </div>
         </nav>
@@ -84,38 +80,31 @@
     </div>
 
     <div class="tenis__form">
-      <form action="enviar.php" method="get" enctype="text/plain">
-        <div>
-            <label for="tnombre">Nombre y apellido:</label>
-            <input type="text" id="tnombre" name="tnombre" placeholder="Ingresar nombre y apellido" required>
+      
+      <form action="enviar.php" method="get" enctype="text/plain"><!-- Inicia  formulario -->
+        <h2>FORMULARIO DE INSCRIPCIÓN</h2>
+        <div class="form__fila">
+           <input type="text" id="gnombre" name="gnombre" placeholder="Ingresar nombre" required>
         </div>
-        <div>
-            <label for="temail">Email:</label>
-            <input type="email" id="temail" name="temail" required placeholder="Ingresar mail">
+        <div class="form__fila">
+           <input type="text" id="gapellido" name="gapellido" placeholder="Ingresar apellido" required>
         </div>
-        <div>
-            <label for="tadjunto">Adjuntar foto carnet:</label>
-            <input type="file" id="tadjunto" name="tadjunto">
+        <div class="form__fila">
+            <input type="email" id="gemail" name="gemail" required placeholder="Ingresar mail">
         </div>
-        <div>
-            <label for="tsexo">Tipo de sexo:</label>
-            <input type="radio" name="tsexo" id="tsexo" value="1">masculino
-            <input type="radio" name="tsexo" id="tsexo" value="2">femenino
+        <div class="form__fila">
+            <label for="gnews">Recibir newsletter</label>
+            <input type="checkbox" id="gnews" name="gnews">
         </div>
-        <div>
-            <label for="tnews">Recibir newsletter</label>
-            <input type="checkbox" id="tnews" name="tnews">
-        </div>
-        <div>
-            <label for="ttimesub">Tipo de subscripción:</label>
-            <select name="ttimesub" id="ttimesub">
-                 <option value="01">Mensual</option>
-                 <option value="02">Trimestral</option>
-                 <option value="03">Anual</option>
+        <div class="form__fila">
+          <label for="gtimesub">Tipo de subscripción:</label>
+          <select name="gtimesub" id="gtimesub">
+              <option value="01">Mensual</option>
+                <option value="02">Trimestral</option>
+                <option value="03">Anual</option>
             </select>
         </div>
-        <input type="submit" value="Enviar ahora">
-        <input type="reset" value="Borrar datos">
+        <input class="form__enviar" type="submit" value="ENVIAR">
       </form>
     </div>
 

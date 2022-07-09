@@ -19,83 +19,54 @@
     
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">                <!-- MENU -->
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">LOREN</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/sede.html">Sede</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Actividades
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="../pages/futbol.html">Futbol</a></li>
-                      <li><a class="dropdown-item" href="../pages/gimnasio.html">Gimnasio</a></li>
-                      <li><a class="dropdown-item" href="../pages/tenis.html">Tenis</a></li>
-                    </ul>
-                    </li>
-                      
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/indumentaria.html">STORE</a>
-                  </li>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">                <!-- MENU -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">LOREN</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/sede.html">Sede</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Actividades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../pages/futbol.html">Futbol</a></li>
+                  <li><a class="dropdown-item" href="../pages/gimnasio.html">Gimnasio</a></li>
+                  <li><a class="dropdown-item" href="../pages/tenis.html">Tenis</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-warning" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-        </nav>
+                </li>
+                  
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/indumentaria.html">STORE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <h1 class="futbol__h1">FUTBOL</h1>
 
     <div class="futbol__form"> <!-- Formulario con img -->
       <form action="enviar.php" method="get" enctype="text/plain">
-         <div>
-            <label for="nombre">Nombre y apellido:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingresar nombre y apellido" required>
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Ingresar mail">
-        </div>
-        <div>
-            <label for="adjunto">Adjuntar foto carnet:</label>
-            <input type="file" id="adjunto" name="adjunto">
-        </div>
-        <div>
-            <label for="sexo">Tipo de sexo:</label>
-            <input type="radio" name="sexo" id="sexo" value="1">masculino
-            <input type="radio" name="sexo" id="sexo" value="2">femenino
-        </div>
-        <div>
-            <label for="news">Recibir newsletter</label>
-            <input type="checkbox" id="news" name="news">
-        </div>
-        <div>
-            <label for="timesub">Tipo de subscripción:</label>
-            <select name="timesub" id="timesub">
-                 <option value="01">Mensual</option>
-                 <option value="02">Trimestral</option>
-                 <option value="03">Anual</option>
-            </select>
-        </div>
-        <div>
-
-          <input type="submit" value="Enviar ahora">
-          <input type="reset" value="Borrar datos">
+        <h4>Formulario de registro</h4>
           
-        </div>   
+        <input class="form_input" type="text" id="nombre" name="nombre" placeholder="Ingresar nombre" required>
+
+        <input class="form_input" type="text" id="apellido" name="apellido" placeholder="Ingresar apellido" required>
+        
+           
+        <input class="form_input" type="email" id="email" name="email" required placeholder="Ingresar mail">
+        
+        <input class="form_input-btn" type="submit" value="Enviar">
       </form>
       <div class="futbol__form-img">
         <img src="../img/futbol__aside.jpg" alt="piernas futbolista">

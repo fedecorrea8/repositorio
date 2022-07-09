@@ -164,18 +164,48 @@ body{
         justify-content: center;
         align-content: center;
         form{
-            padding: 10px;
+            width: 80%;
+            padding: 30px;
             color: whitesmoke;
+            border-radius: 4px;
             border: 2px solid whitesmoke;
-            margin: 10px;
+            background: #24303c;
+            margin: auto;
+            margin-top: 50px;
+            
+
+            h4{
+                text-align: center;
+                margin-bottom: 30px;
+                font-family: 'calibri';
+            }
+            .form_input{
+                width: 100%;
+                padding: 10px;
+                border-radius: 4px;
+                font-family: 'calibri'; 
+                margin-bottom: 14px;
+                background: #24303c;
+                border: 1px solid #1f53c5;
+                text-align: center;
+            }
+            .form_input-btn{
+                width: 100%;
+            }
             
         }
         .futbol__form-img{
+            display: flex;
+            background: #24303c;
+            width: 80%;
             padding: 10px;
             margin: 10px;
+            border-radius: 4px;
             border: 2px solid whitesmoke;
+            justify-content: center;
             img{
-                width: 100%;
+                width: 50%;
+                
             }
         }
     }
@@ -191,7 +221,7 @@ body{
     .futbol__h1{
         font-size: 60px;
         margin-bottom: 30px;
-        margin-top: 30px;
+        margin-top: 50px;
         text-align: center;
         font-weight: 700;
         color: rgb(248, 6, 3);
@@ -203,6 +233,8 @@ body{
             0 0 80px rgb(248, 6, 3);
             transition: 1s;
     }
+
+  
 
     /* Page GIM */
 
@@ -241,8 +273,16 @@ body{
             text-align: center;
             color: whitesmoke;
             justify-self: center;
+            border: 2px solid white;
             tr{
-                background-color: red;
+                background-color: #24303c;
+                border: 1px solid #1f53c5;
+                padding: 10px;
+                margin: 10px;
+            }
+            td{
+                font-family: 'calibri';
+                
             }
         }
             
@@ -251,16 +291,50 @@ body{
             justify-content: center;
             justify-self: center;
             width: 75%;
+            background-color: #24303c;
+            border: 2px solid white;
             h2{
                 color: whitesmoke;
+                margin-top: 5px;
+                text-align: center;
+                font-family: 'calibri';
             }
             form{
                 color: whitesmoke;
+                margin-bottom: 10px;
+                padding: 10px;
+                .form__fila{
+                    margin-bottom: 10px;
+                    padding: 5px;
+                    background-color: #24303c;
+                    text-align: center;
+                    font-family: 'calibri';
+                    color: grey;
+                    label{
+                        font-family: 'calibri';
+                    }
+                    input{
+                        border: 1px solid #1f53c5;
+                        border-radius: 4px;
+                        background-color: #24303c;
+                        width: 100%;
+                        text-align: center;
+                        font-family: 'calibri';
+                    }
+                }
+                .form__enviar{
+                    color: black;
+                    font-family: 'calibri';
+                    width: 100%;
+                }
             }
         }
         .gim__cards{
             grid-area: card;
             justify-self: center;
+            .card{
+                margin-top: 10px;
+            }
         }
             
 
@@ -270,8 +344,6 @@ body{
 
     @media screen and (min-width: 768px){
         .gim__main{
-
-            
             display: grid;
             gap: 10px;
             grid-template-areas: 
@@ -294,7 +366,6 @@ body{
                 display: flex;
                 gap: 3px;
             }
-
         }
     }
 
@@ -336,9 +407,39 @@ body{
         display: flex;
         justify-content: center;
         form{
-            color: whitesmoke;
+            width: 50%;
             border: 2px solid whitesmoke;
-
+            background-color: #24303c;
+            h2{
+                color: whitesmoke;
+                margin-top: 5px;
+                text-align: center;
+                font-family: 'calibri';
+            }
+            .form__fila{
+                margin-bottom: 10px;
+                padding: 5px;
+                background-color: #24303c;
+                text-align: center;
+                font-family: 'calibri';
+                color: grey;
+                label{
+                    font-family: 'calibri';
+                }
+                input{
+                    border: 1px solid #1f53c5;
+                    border-radius: 4px;
+                    background-color: #24303c;
+                    width: 100%;
+                    text-align: center;
+                    font-family: 'calibri';
+                }
+            }
+            .form__enviar{
+                color: black;
+                font-family: 'calibri';
+                width: 100%;
+            }
         }
     }
 
