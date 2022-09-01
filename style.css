@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(20, 20, 20);
+  }
+  
+  h1{
+    text-align: center;
+    margin-top: 20px;
+    background-color: #4339b3;
+    color: white;
+  }
+  
+  table thead {
+        background:#4339b3;
+        color:white;
+  }
+  
+  table tbody tr td{
+    color: white;
+  }
