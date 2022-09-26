@@ -54,10 +54,13 @@ function createCard(Producto){
     img.setAttribute("src", Producto.imagen);
     let precio = document.createElement("h5");
     precio.textContent = Producto.getPrecio();
+    let boton = document.createElement("button");
+    boton.textContent = "Comprar";
 
     card.appendChild(nombre);
     card.appendChild(img);
     card.appendChild(precio);
+    card.appendChild(boton);
     contenedor.appendChild(card);
 
 
